@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       setIsLoading(true);
-      const response = await fetch('https://backend-nu-six-26.vercel.app/products');
+      const response = await fetch('https://backend-two-cyan-46.vercel.app/products');
 
       const responseData = await response.json();
 
@@ -30,7 +30,7 @@ function App() {
         price: +productPrice // "+" to convert string to number
       };
       let hasError = false;
-      const response = await fetch('https://backend-nu-six-26.vercel.app/product', {
+      const response = await fetch('https://backend-two-cyan-46.vercel.app/product', {
         method: 'POST',
         body: JSON.stringify(newProduct),
         headers: {
