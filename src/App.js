@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       setIsLoading(true);
-      const response = await fetch('https://backend-nu-six-26.vercel.app/products');
+      const response = await fetch('https://backend-nu-six-26.vercel.ap/products');
 
       const responseData = await response.json();
 
